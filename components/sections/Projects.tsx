@@ -84,7 +84,7 @@ export function Projects() {
     };
 
     return (
-        <section id="projects" className="py-20 bg-primary-black relative overflow-hidden min-h-screen flex flex-col justify-center">
+        <section id="projects" className="py-20 bg-[#050816] relative overflow-hidden min-h-screen flex flex-col justify-center">
             <div className="container px-4 md:px-6 mx-auto max-w-7xl relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
@@ -104,13 +104,13 @@ export function Projects() {
                     {/* Navigation Buttons */}
                     <button
                         onClick={prevSlide}
-                        className="absolute left-4 md:left-10 z-50 p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white transition-all transform hover:scale-110"
+                        className="absolute left-4 md:left-10 z-[100] p-3 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-md text-white transition-all transform hover:scale-110 flex items-center justify-center shadow-lg border border-white/20"
                     >
                         <ChevronLeft size={32} />
                     </button>
                     <button
                         onClick={nextSlide}
-                        className="absolute right-4 md:right-10 z-50 p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white transition-all transform hover:scale-110"
+                        className="absolute right-4 md:right-10 z-[100] p-3 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-md text-white transition-all transform hover:scale-110 flex items-center justify-center shadow-lg border border-white/20"
                     >
                         <ChevronRight size={32} />
                     </button>

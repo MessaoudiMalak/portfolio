@@ -31,7 +31,7 @@ export function Header() {
 
     return (
         <header
-            className={`fixed top-0 w-full z-50 transition-all duration-300 py-5 bg-white dark:bg-[#050816] ${isScrolled ? "shadow-md" : ""}`}
+            className={`fixed top-0 w-full z-50 transition-all duration-300 py-5 bg-[#050816] ${isScrolled ? "shadow-md" : ""}`}
         >
             <div className="container mx-auto flex justify-between items-center px-4 max-w-7xl">
                 <a
@@ -65,15 +65,13 @@ export function Header() {
                 </nav>
 
                 <div className="hidden md:flex items-center gap-4 ml-4">
-                    <LangSwitcher />
-                    {/* ThemeToggle removed */}
+                    {/* LangSwitcher and ThemeToggle removed */}
                 </div>
 
                 {/* Mobile Menu Toggle */}
                 <div className="md:hidden flex items-center gap-4">
-                    <LangSwitcher />
                     <button
-                        className="p-2 text-gray-900 dark:text-white"
+                        className="p-2 text-white"
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     >
                         {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
