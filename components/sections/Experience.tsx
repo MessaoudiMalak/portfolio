@@ -1,13 +1,11 @@
 "use client";
 
-import { useLanguage } from "@/context/language-context";
 import { translations, profileData } from "@/lib/data";
 import { motion } from "framer-motion";
 import { Briefcase } from "lucide-react";
 
 export function Experience() {
-    const { language } = useLanguage();
-    const t = translations[language].experience || { title: "Work Experience", subtitle: "What I have done so far" };
+    const t = translations.experience || { title: "Work Experience", subtitle: "What I have done so far" };
 
     return (
         <section id="experience" className="py-20 relative bg-[#050816] overflow-hidden">

@@ -1,13 +1,11 @@
 "use client";
 
-import { useLanguage } from "@/context/language-context";
 import { translations, profileData } from "@/lib/data";
 import { motion } from "framer-motion";
 import { Github, Mail, Linkedin, MapPin, Send, Phone } from "lucide-react";
 
 export function Contact() {
-    const { language } = useLanguage();
-    const t = translations[language].contact;
+    const t = translations.contact;
 
     return (
         <section id="contact" className="py-24 relative overflow-hidden bg-[#050816]">
@@ -23,7 +21,7 @@ export function Contact() {
                     className="mb-16 text-center"
                 >
                     <p className="text-cyan-400 uppercase tracking-[0.3em] mb-2 text-xs font-bold">
-                        {language === 'fr' ? "Contact" : "Contact"}
+                        Contact
                     </p>
                     <h2 className="text-5xl md:text-6xl font-black text-white uppercase tracking-tighter">
                         {t.title}

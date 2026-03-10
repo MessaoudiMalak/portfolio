@@ -2,14 +2,11 @@
 
 import { useState, useEffect } from "react";
 import { translations } from "@/lib/data";
-import { useLanguage } from "@/context/language-context";
-import { LangSwitcher } from "./LangSwitcher";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function Header() {
-    const { language } = useLanguage();
-    const t = translations[language].nav;
+    const t = translations.nav;
     const [isScrolled, setIsScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 

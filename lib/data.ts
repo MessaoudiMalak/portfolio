@@ -1,92 +1,49 @@
-export type Language = "fr" | "en";
+export type Language = "en";
 
 
 export const translations = {
-    en: {
-        nav: {
-            home: "Home",
-            about: "About",
-            skills: "Skills",
-            projects: "Projects",
-            contact: "Contact",
-        },
-        hero: {
-            greeting: "Hi, I am",
-            role: "Full Stack Developer",
-            description: "Passionate about innovation, I develop high-performance and scalable web solutions with high added value.",
-            downloadCv: "Download CV",
-            contactMe: "Contact Me",
-        },
-        about: {
-            title: "Overview",
-            subtitle: "Introduction",
-            description: "I'm a passionate Full Stack Developer focused on creating practical and efficient web applications. I work with React on the front-end and PHP/Laravel on the back-end, leveraging databases to build responsive and user-friendly solutions that address real needs. I enjoy writing clean, maintainable code and continuously improving my skills by exploring new technologies and best practices. Outside of coding, I like learning about the latest web trends and sharing knowledge with the developer community.",
-        },
-        experience: {
-            title: "Work Experience",
-            subtitle: "What I have done so far",
-        },
-        skills: {
-            title: "Technical Skills",
-        },
-        projects: {
-            title: "My Projects",
-            viewGithub: "View on GitHub",
-            description: "Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.",
-        },
-        contact: {
-            title: "Contact Me",
-            email: "Email",
-            github: "GitHub",
-            phone: "Phone",
-        },
+    nav: {
+        home: "Home",
+        about: "About",
+        skills: "Skills",
+        projects: "Projects",
+        contact: "Contact",
     },
-    fr: {
-        nav: {
-            home: "Accueil",
-            about: "À propos",
-            skills: "Compétences",
-            projects: "Projets",
-            contact: "Contact",
-        },
-        hero: {
-            greeting: "Bonjour, je suis",
-            role: "Développeur Full Stack",
-            description: "Passionné par l’innovation, je développe des solutions web performantes et évolutives à forte valeur ajoutée.",
-            downloadCv: "Télécharger CV",
-            contactMe: "Me Contacter",
-        },
-        about: {
-            title: "Aperçu",
-            subtitle: "Introduction",
-            description: "Je suis un développeur Full Stack passionné, concentré sur la création d'applications web pratiques et efficaces. Je travaille avec React pour le front-end et PHP/Laravel pour le back-end, en exploitant les bases de données pour construire des solutions réactives et conviviales qui répondent à des besoins réels. J'aime écrire du code propre et maintenable, et améliorer continuellement mes compétences en explorant de nouvelles technologies. En dehors du code, j'aime suivre les dernières tendances web et partager mes connaissances avec la communauté.",
-        },
-        experience: {
-            title: "Expérience Professionnelle",
-            subtitle: "Ce que j'ai accompli jusqu'à présent",
-        },
-        skills: {
-            title: "Compétences Techniques",
-        },
-        projects: {
-            title: "Mes Projets",
-            viewGithub: "Voir sur GitHub",
-            description: "Les projets suivants présentent mes compétences et mon expérience à travers des exemples concrets de mon travail. Chaque projet est brièvement décrit avec des liens vers les dépôts de code et des démos en direct. Cela reflète ma capacité à résoudre des problèmes complexes, à travailler avec différentes technologies et à gérer des projets efficacement.",
-        },
-        contact: {
-            title: "Contactez-moi",
-            email: "Email",
-            github: "GitHub",
-            phone: "Téléphone",
-        },
+    hero: {
+        greeting: "Hi, I am",
+        role: "Full Stack Developer",
+        description: "Passionate about innovation, I develop high-performance and scalable web solutions with high added value.",
+        downloadCv: "Download CV",
+        contactMe: "Contact Me",
+    },
+    about: {
+        title: "Overview",
+        subtitle: "Introduction",
+        description: "I'm a passionate Full Stack Developer focused on creating practical and efficient web applications. I work with React on the front-end and PHP/Laravel on the back-end, leveraging databases to build responsive and user-friendly solutions that address real needs. I enjoy writing clean, maintainable code and continuously improving my skills by exploring new technologies and best practices. Outside of coding, I like learning about the latest web trends and sharing knowledge with the developer community.",
+    },
+    experience: {
+        title: "Work Experience",
+        subtitle: "What I have done so far",
+    },
+    skills: {
+        title: "Technical Skills",
+    },
+    projects: {
+        title: "My Projects",
+        viewGithub: "View on GitHub",
+        description: "Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.",
+    },
+    contact: {
+        title: "Contact Me",
+        email: "Email",
+        github: "GitHub",
+        phone: "Phone",
     },
 };
 
 export const profileData = {
     name: "Malak",
-    role: {
-        fr: "Développeur Full Stack",
-    },
+    role: "Full Stack Developer",
     email: "malakmalak2005123@gmail.com",
     phone: "0709186544",
     github: "https://github.com/malakmalak2005123-cmd",
@@ -112,76 +69,61 @@ export const profileData = {
     },
     experiences: [
         {
-            title: "Développeuse Full Stack (Laravel/Vue.js)",
+            title: "Full Stack Developer (Laravel/Vue.js)",
             company_name: "Ark-x Talent Solutions",
             icon: "freelance",
             iconBg: "#383E56",
-            date: "Oct 2025 - Fév 2026",
+            date: "Oct 2025 - Feb 2026",
             points: [
-                "Développement d’un site web e-commerce pour un guide touristique, incluant gestion des profils utilisateurs, des rendez-vous pour hôtels et restaurants, et planification des activités.",
-                "Collaboration avec l’équipe pour optimiser l’expérience utilisateur et les performances de l’application.",
+                "Development of an e-commerce website for a tourist guide, including user profile management, hotel and restaurant appointments, and activity planning.",
+                "Collaboration with the team to optimize user experience and application performance.",
             ],
             tech: ["PHP", "Laravel", "MySQL", "HTML", "CSS", "Git", "GitHub", "Vue.js"]
         },
         {
-            title: "Développeuse Web PHP (Stage / Projet encadré)",
+            title: "PHP Web Developer (Internship / Supervised Project)",
             company_name: "CHU",
             icon: "agency",
             iconBg: "#E6DEDD",
-            date: "Mar 2025 - Avr 2025",
+            date: "Mar 2025 - Apr 2025",
             points: [
-                "Création d’une interface utilisateur avec React et CSS pour afficher les informations médicales des patients.",
-                "Mise en place d’un système de prise de rendez-vous en ligne (choix de la date, de l’heure et du médecin).",
-                "Gestion des données des patients et des rendez-vous via une base MySQL.",
-                "Travail sur un projet encadré dans un contexte académique.",
+                "Creation of a user interface with React and CSS to display patient medical information.",
+                "Implementation of an online appointment booking system (choice of date, time, and doctor).",
+                "Management of patient data and appointments via a MySQL database.",
+                "Work on a supervised project in an academic context.",
             ],
-            tech: ["Ract", "PHP", "MySQL", "HTML", "CSS", "Git", "GitHub", "Postman"]
+            tech: ["React", "PHP", "MySQL", "HTML", "CSS", "Git", "GitHub", "Postman"]
         },
     ],
     services: [
         {
             title: "Clean Code",
             icon: "code",
-            description: {
-                en: "Writing maintainable, scalable code that stands the test of time.",
-                fr: "Écriture de code maintenable et évolutif qui résiste à l'épreuve du temps."
-            }
+            description: "Writing maintainable, scalable code that stands the test of time."
         },
         {
             title: "Innovation",
             icon: "innovation",
-            description: {
-                en: "Always exploring new technologies and creative solutions.",
-                fr: "Exploration constante de nouvelles technologies et solutions créatives."
-            }
+            description: "Always exploring new technologies and creative solutions."
         },
         {
             title: "Goal-Oriented",
             icon: "goal",
-            description: {
-                en: "Focused on delivering results that exceed expectations.",
-                fr: "Concentré sur la livraison de résultats dépassant les attentes."
-            }
+            description: "Focused on delivering results that exceed expectations."
         },
         {
             title: "Performance",
             icon: "performance",
-            description: {
-                en: "Optimizing every aspect for speed and efficiency.",
-                fr: "Optimisation de chaque aspect pour la vitesse et l'efficacité."
-            }
+            description: "Optimizing every aspect for speed and efficiency."
         },
     ],
     projects: [
         {
             id: "catshop",
             title: "CatShop",
-            description: {
-                en: "An e-commerce website dedicated to cat adoption, allowing users to browse available cat profiles, make online adoption requests, and access essential products related to cat well-being.",
-                fr: "Un site web e-commerce dédié à l’adoption de chats, permettant aux utilisateurs de consulter les profils des chats disponibles, d’effectuer des demandes d’adoption en ligne et d’accéder aux produits essentiels liés au bien-être des chats.",
-            },
+            description: "An e-commerce website dedicated to cat adoption, allowing users to browse available cat profiles, make online adoption requests, and access essential products related to cat well-being.",
             tags: ["PHP", "MySQL", "HTML", "CSS", "Git", "GitHub"],
-            link: "/projects/catshop", // Internal link
+            link: "/projects/catshop",
             liveUrl: "https://catshop.rf.gd/",
             repoUrl: "https://github.com/malakmalak2005123-cmd/CatShop",
             images: [
@@ -207,11 +149,8 @@ export const profileData = {
         {
             id: "travelo",
             title: "Travelo",
-            description: {
-                en: "Discover the Magic of Morocco. From the golden dunes of the Sahara to the blue streets of Chefchaouen, experience an unforgettable journey through Morocco's wonders.",
-                fr: "Découvrez la magie du Maroc. Des dunes dorées du Sahara aux rues bleues de Chefchaouen, vivez un voyage inoubliable à travers les merveilles du Maroc.",
-            },
-            tags: ["laravel", "Vue.js", "HTML", "CSS", "GitHub", "Designe Paterns"],
+            description: "Discover the Magic of Morocco. From the golden dunes of the Sahara to the blue streets of Chefchaouen, experience an unforgettable journey through Morocco's wonders.",
+            tags: ["Laravel", "Vue.js", "HTML", "CSS", "GitHub", "Design Patterns"],
             link: "/projects/travelo",
             images: [
                 "/images/projects/travelo/project/image.png",

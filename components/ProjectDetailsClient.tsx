@@ -1,6 +1,5 @@
 "use client";
 
-import { useLanguage } from "@/context/language-context";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -12,9 +11,8 @@ interface ProjectDetailsClientProps {
 }
 
 export default function ProjectDetailsClient({ project, images, adminImages }: ProjectDetailsClientProps) {
-    const { language } = useLanguage();
     const p = project;
-    const description = p.description[language] || p.description['en'];
+    const description = p.description;
 
     return (
         <main className="min-h-screen bg-[#050816] relative overflow-x-hidden">
@@ -104,7 +102,7 @@ export default function ProjectDetailsClient({ project, images, adminImages }: P
                             {/* Admin Gallery Section */}
                             {adminImages && adminImages.length > 0 && (
                                 <div className="bg-[#0d1b3e] p-8 rounded-2xl border border-blue-500/10 space-y-6">
-                                    <h2 className="text-2xl font-bold text-white">Partie Admin</h2>
+                                    <h2 className="text-2xl font-bold text-white">Admin Section</h2>
                                     <div className="grid gap-8">
                                         {adminImages.map((img: string, idx: number) => (
                                             <div key={idx} className="rounded-xl overflow-hidden border border-blue-500/20 shadow-lg group bg-[#050816]">

@@ -1,14 +1,12 @@
 "use client";
 
-import { useLanguage } from "@/context/language-context";
 import { translations, profileData } from "@/lib/data";
 import { motion, AnimatePresence } from "framer-motion";
 import { Github, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export function Projects() {
-    const { language } = useLanguage();
-    const t = translations[language].projects;
+    const t = translations.projects;
     const [activeIndex, setActiveIndex] = useState(0);
     const [isMobile, setIsMobile] = useState(false);
 
@@ -206,7 +204,7 @@ export function Projects() {
                                         <div className="p-6 flex-1 flex flex-col">
                                             <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
                                             <p className="text-gray-400 text-sm line-clamp-4 flex-1">
-                                                {project.description[language] || project.description['en']}
+                                                {project.description}
                                             </p>
 
                                             {/* Tech Stack */}

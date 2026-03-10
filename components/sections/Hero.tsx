@@ -1,13 +1,11 @@
 "use client";
 
-import { useLanguage } from "@/context/language-context";
 import { translations, profileData } from "@/lib/data";
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
 export function Hero() {
-    const { language } = useLanguage();
-    const t = translations[language].hero;
+    const t = translations.hero;
 
     return (
         <section className="min-h-screen flex items-center justify-center pt-20 pb-10 relative overflow-hidden bg-[#050816]">
@@ -58,7 +56,7 @@ export function Hero() {
                         {profileData.name}
                     </h1>
                     <p className="text-sm md:text-base text-[#aaa6c3] tracking-[0.3em] font-medium uppercase">
-                        {t.role.split(' ').join(', ')}.
+                        {profileData.role}.
                     </p>
                 </motion.div>
 

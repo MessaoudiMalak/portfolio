@@ -1,6 +1,5 @@
 "use client";
 
-import { useLanguage } from "@/context/language-context";
 import { translations, profileData } from "@/lib/data";
 import { motion } from "framer-motion";
 import { Code, Lightbulb, Target, Zap, Download } from "lucide-react";
@@ -13,8 +12,7 @@ const icons = {
 };
 
 export function About() {
-    const { language } = useLanguage();
-    const t = translations[language].about;
+    const t = translations.about;
 
     return (
         <section id="about" className="py-20 relative bg-[#050816]">
@@ -51,8 +49,7 @@ export function About() {
                                 </div>
                                 <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
                                 <p className="text-gray-400 text-sm leading-relaxed">
-                                    {/* @ts-ignore */}
-                                    {service.description[language] || service.description['en']}
+                                    {service.description}
                                 </p>
                             </motion.div>
                         );
