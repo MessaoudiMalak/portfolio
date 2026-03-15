@@ -44,9 +44,9 @@ export const translations = {
 export const profileData = {
     name: "Malak",
     role: "Full Stack Developer",
-    email: "malakmalak2005123@gmail.com",
+    email: "messaoudimalak01@gmail.com",
     phone: "0709186544",
-    github: "https://github.com/malakmalak2005123-cmd",
+    github: "https://github.com/MalakMessaoudi",
     linkedin: "https://www.linkedin.com/in/malak-messaoudi/",
     skills: {
         frontend: [
@@ -129,7 +129,7 @@ export const profileData = {
             tags: ["PHP", "MySQL", "HTML", "CSS", "Git", "GitHub"],
             link: "/projects/catshop",
             liveUrl: "https://catshop.rf.gd/",
-            repoUrl: "https://github.com/malakmalak2005123-cmd/CatShop",
+            repoUrl: "https://github.com/MalakMessaoudi/CatShop",
             images: [
                 "/images/projects/catshop/project/image.png",
                 "/images/projects/catshop/project/image copy.png",
@@ -153,7 +153,7 @@ export const profileData = {
         {
             id: "travelo",
             title: "Travelo",
-            description: "Discover the Magic of Morocco. From the golden dunes of the Sahara to the blue streets of Chefchaouen, experience an unforgettable journey through Morocco's wonders.",
+            description: "A tourism website dedicated to discovering Morocco, allowing users to explore iconic destinations, learn about cultural experiences, and plan unforgettable journeys across the country's diverse landscapes.",
             tags: ["Laravel", "Vue.js", "HTML", "CSS", "GitHub", "Design Patterns"],
             liveUrl: "", // Add live URL if available
             repoUrl: "https://github.com/Travelo-web-app/",
